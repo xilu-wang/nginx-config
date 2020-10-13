@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx-lb:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./templates:/etc/nginx/templates
+      - ./html:/usr/share/nginx/html
