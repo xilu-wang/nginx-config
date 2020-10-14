@@ -6,5 +6,4 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./templates:/etc/nginx/templates
-      - ./html:/usr/share/nginx/html
+      - ./conf:/etc/nginx/conf.d

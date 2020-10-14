@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  tomcat1:
+    image: tomcat
+    ports:
+      - 8080:8080
+    volumes:
+      - ./html_8080:/usr/local/tomcat/webapps/ROOT/
+  tomcat2:
+    image: tomcat
+    ports:
+      - 8081:8080
+    volumes:
+      - ./html_8081:/usr/local/tomcat/webapps/ROOT/
+  tomcat3:
+    image: tomcat
+    ports:
+      - 8082:8080
+    volumes:
+      - ./html_8082:/usr/local/tomcat/webapps/ROOT/
